@@ -29,7 +29,7 @@ git命令（通用Linux命令）
 	add重新添加，提示信息变绿，commit重新提交，status为空
 	
 版本穿梭
-	git reset 
+	git reset --hard 版本号 可以穿越回之前的版本号 
 
 tips：
 	git按行维护文件，修改文件无法表达，只能转变为：修改那行删掉，再新增修改内容
