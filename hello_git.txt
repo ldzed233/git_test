@@ -1,10 +1,11 @@
 git命令（通用Linux命令）
 	初始化仓库 git  init
 	主分支 master
-	新建文件 vim  hello_git.txt
+	修改文件 vim  hello_git.txt
 	读取文件 cat  hello_git.txt
 	展示文件 ll
 	展示末尾x行  tail -n  x
+	查看工作区状态 git status
 
 红色：文件有了，但处于工作区，没追踪过
 添加到暂存区 git add
@@ -14,4 +15,12 @@ git命令（通用Linux命令）
 	(只从暂存区删除，不删除工作区文件，相当于撤销add)
 
 提交到本地库
+ 
 	git commit -m "日志信息" xxx(文件名)
+	提交完后查看status，为空。
+	若显示nothing to commit, working tree clean，提交过了，文件没更新没修改
+	查看git引用版本信息 git  reflog，即可看到提交的版本号与文本信息（缩略版本号）
+	查看详细日志信息 git  log，这个命令里可以看到提交信息（完整版本号）
+
+修改文件
+	修改文件后，status变为modefied，红色提示：文件修改未被添加暂存区
