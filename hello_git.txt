@@ -1,0 +1,17 @@
+git命令（通用Linux命令）
+	初始化仓库 git  init
+	主分支 master
+	新建文件 vim  hello_git.txt
+	读取文件 cat  hello_git.txt
+	展示文件 ll
+	展示末尾x行  tail -n  x
+
+红色：文件有了，但处于工作区，没追踪过
+添加到暂存区 git add
+
+绿色：当前git已追踪，在暂存区，可以删除
+	从暂存区删除git rm --cached  xxx(文件名)
+	(只从暂存区删除，不删除工作区文件，相当于撤销add)
+
+提交到本地库
+	git commit -m "日志信息" xxx(文件名)
