@@ -54,10 +54,10 @@ tips：
 	创建分支 git branch
 	查看分支 git branch -v
 	切换分支 git checkout
-	合并分支 git merge
+	合并分支 git merge  xxx（分支名） 把指定的分支合并到当前分支上
 
-在hot-update分支新增数据：
-	通过switch也可以切换分支（此更新仅提交在hot-update分支）
+合并分支：
+	
 	
 
 
